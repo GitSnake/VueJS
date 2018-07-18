@@ -35,7 +35,7 @@
 </head>
 <body>
 	<div id="app">
-		<p>hello, world!</p>
+		<p>{{ message }}</p>
 	</div>
 
 <script>
@@ -48,7 +48,10 @@
 	}
 
 	var app = new Vue({
-		el: "#app"
+		el: "#app",
+		data: {
+			message: "hello, world!"
+		}
 	})
 
 </script>
