@@ -42,6 +42,14 @@
 	"use strict"
 
 	// emojify returns the corresponding emoji image
+	function emojify(name) {
+		var out = `<img src="emojis/` + name + `.png" alt="">`
+		return out
+	}
+
+	var app = new Vue({
+		el: "#app"
+	})
 
 </script>
 
